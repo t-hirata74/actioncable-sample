@@ -4,6 +4,8 @@
     <title>ActioncableSample</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <!-- クライアントサイドのAction Cableは、action_cable_meta_tagによって生成されたタグを見て接続先を判別する -->
+    <%= action_cable_meta_tag %> 
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
